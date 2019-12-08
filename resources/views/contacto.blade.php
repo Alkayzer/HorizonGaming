@@ -29,6 +29,7 @@
     <!-- Styles -->
 	<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 	<link href="{{ asset('css/index.css') }}" rel="stylesheet">
+	<link href="{{ asset('css/contacto.css')}}" rel="stylesheet">
 
 </head>
 <body>
@@ -83,6 +84,105 @@
 	</div>
 </nav>
 <!--fin navbar-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid content">
+	<div class="row">
+		<div class="col-sm">
+		One of three columns
+		</div>
+		<div class="col-sm">
+			<span class="form-title">Formulario de Contacto</span>
+			<div class="contact-panel">	
+					<div class="contact-box">
+						<div class="contact-box-inner">
+							<h3 class="contact-title">Asociación y Publicidad</h3>
+							<a class="contact-link" href="mailto:partners@horizongaming.com.ar">partners@horizongaming.com.ar</a>
+						</div>
+					</div>
+					<div class="contact-box">
+						<div class="contact-box-inner">
+							<h3 class="contact-title">Consultas Administrativa</h3>
+							<a class="contact-link" href="mailto:contact@horizongaming.com.ar">contact@horizongaming.com.ar</a>
+						</div>
+					</div>
+					<div class="contact-box">
+						<div class="contact-box-inner">
+							<h3 class="contact-title">Consultas Generales</h3>
+							<a class="contact-link" href="mailto:support@horizongaming.com.ar">support@horizongaming.com.ar</a>
+						</div>
+					</div>
+			</div>
+		</div>
+		<div class="col-sm">
+		One of three columns
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!--comienzo footer-->
