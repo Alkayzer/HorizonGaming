@@ -27,6 +27,25 @@ span.form-title{
 
 .contact-box{
     background-color: #fff;
-    margin: 10px;
+    margin: 15px;
+    padding: 50px;
+    
+}
+
+a.contact-link{
+    text-decoration: none;
+    color: black;
+}
+
+.contact-box:hover{
+    background-color:#11171a;
+}
+
+a.contact-link:hover{
+    color: white;
+}
+
+h3.contact-title{
+    color: goldenrod;
     
 }
