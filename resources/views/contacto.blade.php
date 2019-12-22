@@ -45,10 +45,9 @@
 
 <div id="app">
 
-<!--navbar-->
 <nav class="navbar navbar-expand-lg">
   <a class="navbar-brand" href="#">
-    <img src="{{asset('img/logo.png')}}" width="80" height="80" alt="">
+    <img src="{{asset('img/hzg.png')}}" width="100" height="40" alt="">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="container-hamburguer" onclick="myFunction(this)">
@@ -87,62 +86,34 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="container-fluid content">
 	<div class="row">
 		<div class="col-sm">
-		One of three columns
 		</div>
 		<div class="col-sm">
-			<span class="form-title">Formulario de Contacto</span>
+			<span class="form-title">Contacto Ágil</span>
 			<div class="contact-panel">	
 					<div class="contact-box">
 						<div class="contact-box-inner">
 							<h3 class="contact-title">Asociación y Publicidad</h3>
-							<a class="contact-link" href="mailto:partners@horizongaming.com.ar">partners@horizongaming.com.ar</a>
+							<a class="contact-link" id="linkz" href="mailto:partners@horizongaming.com.ar">partners@horizongaming.com.ar</a>
 						</div>
 					</div>
 					<div class="contact-box">
 						<div class="contact-box-inner">
 							<h3 class="contact-title">Consultas Administrativa</h3>
-							<a class="contact-link" href="mailto:contact@horizongaming.com.ar">contact@horizongaming.com.ar</a>
+							<a class="contact-link" id="linkz" href="mailto:contact@horizongaming.com.ar">contact@horizongaming.com.ar</a>
 						</div>
 					</div>
 					<div class="contact-box">
 						<div class="contact-box-inner">
 							<h3 class="contact-title">Consultas Generales</h3>
-							<a class="contact-link" href="mailto:support@horizongaming.com.ar">support@horizongaming.com.ar</a>
+							<a class="contact-link" id="linkz" href="mailto:support@horizongaming.com.ar">support@horizongaming.com.ar</a>
 						</div>
 					</div>
 			</div>
 		</div>
 		<div class="col-sm">
-		One of three columns
 		</div>
 	</div>
 </div>
@@ -153,37 +124,65 @@
 
 
 
+<div style="text-align: center;">
+	<span class="form-title">
+		Formulario de Contacto
+    </span>
+</div>
 
+<div class="centering-form">
+<form class="col-md-6 form-contact">
+	<div class="row">
+		<div class="form-group col-md-6">
+			<label for="">Nombre</label>
+			<input type="text" class="form-control" id="" placeholder="Ingrese su nombre...">
+		</div>
+		<div class="form-group col-md-6">
+			<label for="">Apellido</label>
+			<input type="text" class="form-control" id="" placeholder="Ingrese su apellido...">
+		</div>
+	</div>
+	<div class="form-group">
+		<label>Correo Electrónico</label>
+		<input type="email" class="form-control" id="" placeholder="Ingrese su email...">
+	</div>
+	<div class="row">
+		<div class="form-group col-md-8">
+			<label>Número Telefónico</label>
+			<div class="form-group row" style="margin-left:0.5px">
+			<input type="text" class="form-control col-md-3 mr-3" id="" maxlenght="10" minlenght="10" placeholder="cod Area">
+			<input type="text" class="form-control col-md-7" id="" maxlenght="10" minlenght="10" placeholder="Numero de celular">
+			</div>
+		</div>
+		<div class="form-group col-md-4">
+			<label for="">Asunto</label>
+			<select class="form-control" id="">
+				<option value="" selected disabled hidden>Seleccione Asunto</option>
+				<option value="1">Asociación</option>
+				<option value="2">Tienda</option>
+				<option value="3">Administrativo</option>
+				<option value="4">Unete al Team</option>
+				<option value="5">Otro</option>
+			</select>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="exampleFormControlTextarea1">Mensaje</label>
+		<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Ingrese su mensaje aquí..."></textarea>
+	</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	<div class="form-group button">	
+		<div class="svg-wrapper">
+			<svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+				<rect id="shape" height="40" width="150" />
+				<div id="text">
+				<a href=""><span class="spot"></span>Enviar</a>
+				</div>
+			</svg>
+		</div>
+	</div>
+	</form>
+</div>
 
 <!--comienzo footer-->
 <footer class="container-fluid footer solid-bg py-4">

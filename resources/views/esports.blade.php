@@ -28,7 +28,8 @@
     
     <!-- Styles -->
 	<link href="{{ asset('css/app.css') }}" rel="stylesheet">
-	<link href="{{ asset('css/esports.css') }}" rel="stylesheet">
+	<link href="{{ asset('css/index.css') }}" rel="stylesheet">
+	<link href="{{ asset('css/esports.css')}}" rel="stylesheet">
 
 </head>
 <body>
@@ -42,5 +43,183 @@
 </div>
 <!-- end of preloader -->
 
-</body>
+<div id="app">
+
+
+<!--navbar-->
+<nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand" href="#">
+    <img src="{{asset('img/hzg.png')}}" width="100" height="40" alt="">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="container-hamburguer" onclick="myFunction(this)">
+	<div class="bar1"></div>
+	<div class="bar2"></div>
+	<div class="bar3"></div>
+	</span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav snip1189">
+      <li class="nav-item">
+        <a class="nav-link active" href="{{url('')}}">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{url('nosotros')}}">Nosotros</a>
+	  </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="{{url('esports')}}">Esports</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{url('contacto')}}">Contacto</a>
+      </li>
+	</ul>
+  </div>
+	<div>
+		<ul class="navbar-nav navbar-right">
+			<a href="https://www.facebook.com/HorizonGamingOfficial/" target="_blank"><i class="fa fa-facebook-f icons fb btn-social"></i></a>
+			<a href="https://www.instagram.com/horizongamingofficial/" target="_blank"><i class="fa fa-instagram icons ins btn-social"></i></a>
+			<a href="https://www.twitch.tv/HZGesports/" target="_blank"><i class="fa fa-twitch icons twitch btn-social"></i></a>
+			<a href="https://youtube.com/HZGesports/" target="_blank"><i class="fa fa-youtube icons yt btn-social"></i></a>
+			<a href="https://twitter.com/HZGesports/" target="_blank"><i class="fa fa-twitter icons tw btn-social"></i></a>
+		</ul>
+	</div>
+</nav>
+<!--fin navbar-->
+
+
+
+
+<div class="container-fluid header">
+    <div id="header" class="row">
+        <div class="col-md-6 left">
+            <div class="centering1">
+            <span class="lol1">League of Legends</span><span class="lol2">Oficial</span>
+            </div>
+        </div>
+        <div class="col-md-6 right">
+            <div class="centering2">
+            <span class="lol1">League of Legends</span><span class="lol2">Academy</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="container-fluid footer solid-bg py-4">
+<div class="container-fluid footer">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-2">
+		<img class="logo-footer" src="{{asset('img/logo.png')}}">
+	</div>
+	<div class="col-2">
+	<ul class="ul-footer">
+		<span class="column-footer">TIENDA</span>
+			<li class="nav-item">
+				<a class="link-footer" href="#">Camisetas</a>
+			</li>
+			<li class="nav-item">
+				<a class="link-footer" href="#">Periféricos</a>
+			</li>
+			<li class="nav-item">
+				<a class="link-footer" href="#">Accesorios</a>
+			</li>
+		</ul>
+    </div>
+    <div class="col-2">
+	<ul class="ul-footer">
+		<span class="column-footer">EXTRA</span>
+			<li class="nav-item">
+				<a class="link-footer" href="#">Nosotros</a>
+			</li>
+			<li class="nav-item">
+				<a class="link-footer" href="#">Sponsors</a>
+			</li>
+			<li class="nav-item">
+				<a class="link-footer" href="#">Noticias</a>
+			</li>
+			<li class="nav-item">
+				<a class="link-footer" href="#">Torneos</a>
+			</li>
+		</ul>
+    </div>
+    <div class="col-2">
+	<ul class="ul-footer">
+			<span class="column-footer">SOCIAL</span>
+			<li class="nav-item">
+				<a class="link-footer" href="#">Instagram</a>
+			</li>
+			<li class="nav-item">
+				<a class="link-footer" href="#">Facebook</a>
+			</li>
+			<li class="nav-item">
+				<a class="link-footer" href="#">Twitter</a>
+			</li>
+			<li class="nav-item">
+				<a class="link-footer" href="#">Twitch</a>
+			</li>
+			<li class="nav-item">
+				<a class="link-footer" href="#">Youtube</a>
+			</li>
+		</ul>
+	</div>
+	<div class="col-2">
+	<ul class="ul-footer">
+			<span class="column-footer">AYUDA</span>
+			<li class="nav-item">
+				<a class="link-footer" href="#">¡Unete!</a>
+			</li>
+			<li class="nav-item">
+				<a class="link-footer" href="#">Soporte</a>
+			</li>
+			<li class="nav-item">
+				<a class="link-footer" href="#">Contacto</a>
+			</li>
+		</ul>
+    </div>
+  </div>
+</div>
+<span class="derechos">Horizon Gaming © | Todos los derechos reservados.</span>
+</div>
+</footer>
+
+</div>
+</body> 
+	<!-- Scripts -->
+	<script src="{{ asset('js/app.js') }}" defer></script>
+	<script src="{{ asset('js/index.js') }}" defer></script>
+	<script src="{{ asset('js/font-awesome.js') }} " defer></script>
+	<script src="{{ asset('js/jquery.nivo.slider.js') }}" defer></script>
 </html>
+

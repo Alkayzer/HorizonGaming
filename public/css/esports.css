@@ -1,14 +1,60 @@
-body {
-    background-image: url("../img/errors/flayer.png");
-    min-height: 100%;
-    min-width: 1024px;
-	
-    /* Set up proportionate scaling */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
     width: 100%;
-    height: auto;
-	
-    /* Set up positioning */
-    position: fixed;
-    top: 0;
-    left: 0;
+    height: 100%;
+}
+
+@font-face{
+	font-family: lol;
+	src: url('../Fonts/lol-font-2.ttf');
+}
+
+
+div#header.row{
+    padding-top: 300px;
+    padding-bottom: 300px;
+    text-align: center;
+}
+
+div#header.row{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: inherit;
+    background-position: center center;
+    background-image: url("../img/con-fondo/header.png");
+}
+
+span.lol1{
+    font-family: lol;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-size: xx-large;
+    color: #FFDC00;
+}
+
+span.lol2{
+    font-family: lol;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-size: xx-large;
+    margin-left: 10px;
+    color: #0077ff;
+}
+
+
+.centering1{
+    padding-right: 100px;
+}
+
+.centering2{
+    padding-left: 100px;
 }

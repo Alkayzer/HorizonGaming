@@ -39,7 +39,7 @@ $(window).on('load', function() {
     }
     hidePreloader();
 
-    id = 0;
+    id = 1;
 setInterval(function(){
   var current = $('.flex--active').data('slide');
   var next = id + 1;
