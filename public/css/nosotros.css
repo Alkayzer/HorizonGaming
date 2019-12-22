@@ -1,0 +1,7 @@
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: inherit;
+    background-position: center center;
+    background-image: url("../img/errors/flayer.png");
+}
