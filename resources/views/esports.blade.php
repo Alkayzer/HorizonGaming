@@ -30,7 +30,8 @@
 	<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 	<link href="{{ asset('css/index.css') }}" rel="stylesheet">
 	<link href="{{ asset('css/esports.css')}}" rel="stylesheet">
-
+	<link href="{{ asset('css/cards.css')}}" rel="stylesheet">
+	
 </head>
 <body>
 <!-- Preloader -->
@@ -103,6 +104,43 @@
         </div>
     </div>
 </div>
+
+
+
+<div class="container-fluid">
+	<div class="">
+		<div class="roster-oficial-div">
+			<span class="roster-oficial-span">Roster Oficial</span>
+			<div>
+
+				<img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/e/ef/Top_icon.png/revision/latest/window-crop/width/40/x-offset/0/y-offset/5/window-width/130/window-height/130?cb=20181117143602">
+				<img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/1/1b/Jungle_icon.png/revision/latest/window-crop/width/40/x-offset/0/y-offset/5/window-width/130/window-height/130?cb=20181117143559">
+				<img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/9/98/Middle_icon.png/revision/latest/window-crop/width/40/x-offset/0/y-offset/5/window-width/130/window-height/130?cb=20181117143644">
+				<img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/9/97/Bottom_icon.png/revision/latest/window-crop/width/40/x-offset/0/y-offset/5/window-width/130/window-height/130?cb=20181117143632">
+				<img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/e/e0/Support_icon.png/revision/latest/window-crop/width/40/x-offset/0/y-offset/5/window-width/130/window-height/130?cb=20181117143601">
+
+				<article class="card">
+					<div class="thumb"></div>
+					<div class="infos">
+						<h2 class="title">Namelez<span class="flag"></span></h2>
+						<h3 class="date">Toplaner</h3>
+						<h3 class="seats">seats remaining: 2</h3>
+						<p class="txt">Join us for our Live Infinity Session in beautiful New York City. This is a 3 day intensive workshop where you'll learn how to become a better version of...</p>
+						<h3 class="details">event details</h3>
+					</div>
+				</article>
+
+			</div>
+		</div>
+		<div class="">
+			<span>Roster Academy</span>
+			<div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
 
 
 

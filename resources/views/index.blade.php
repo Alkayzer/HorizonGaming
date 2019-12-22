@@ -167,7 +167,7 @@
 
 <div class="social-media">
 	<div>
-		<span class="instagram-hzg active">SIGUENOS EN </span><a class="instagram-hzg" href="https://www.instagram.com/horizongamingofficial/" target="_blank"><i class="fa fa-instagram"></i><span class="instagram-hzg color"> INSTAGRAM</spam></a>
+		<span class="instagram-hzg active">SIGUENOS EN </span><a class="instagram-hzg" href="https://www.instagram.com/horizongamingofficial/" target="_blank"><i class="fa fa-instagram icons ins"></i><span class="instagram-hzg color"> INSTAGRAM</spam></a>
 
 	</div>
 </div>

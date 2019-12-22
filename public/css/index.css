@@ -557,10 +557,21 @@ span.derechos{
 
 span.instagram-hzg{
 	font-family: Arial Black, Arial Bold, Gadget, sans-serif;
+
+}
+
+a.instagram-hzg{
+	text-decoration: none;
+	font-size: 40px;
+}
+
+span.instagram-hzg.active{
+	font-size: 40px;
 }
 
 .instagram-hzg.color{
 	color:rgb(0, 119, 255);
+
 }
 
 .instagram-hzg.active{

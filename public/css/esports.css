@@ -14,6 +14,9 @@ html
 	src: url('../Fonts/lol-font-2.ttf');
 }
 
+body{
+    background-color: #f4f5f6;
+}
 
 div#header.row{
     padding-top: 300px;
@@ -57,4 +60,19 @@ span.lol2{
 
 .centering2{
     padding-left: 100px;
+}
+
+
+.roster-oficial-div{
+    text-align: center;
+}
+.roster-oficial-span{
+    font-family: lol;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-size: xx-large;
+    margin-left: 10px;
+    color: #0077ff;
 }
