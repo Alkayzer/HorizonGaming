@@ -93,17 +93,16 @@
     <div id="header" class="row">
         <div class="col-md-6 left">
             <div class="centering1">
-            <span class="lol1">League of Legends</span><span class="lol2">Oficial</span>
+            <span class="lol1">Roster</span><span class="lol2">Oficial</span>
             </div>
         </div>
         <div class="col-md-6 right">
             <div class="centering2">
-            <span class="lol1">League of Legends</span><span class="lol2">Academy</span>
+            <span class="lol1">Roster</span><span class="lol2">Academy</span>
             </div>
         </div>
     </div>
 </div>
-
 
 
 <div class="container-fluid">
@@ -172,6 +171,17 @@
 					</div>
 				</div>
 
+                <div class="card">
+					<div class="thumb"></div>
+					<div class="infos">
+						<h2 class="title">Namelez<span class="flag"></span></h2>
+						<h3 class="date">Toplaner</h3>
+						<h3 class="seats">seats remaining: 2</h3>
+						<p class="txt">Join us for our Live Infinity Session in beautiful New York City. This is a 3 day intensive workshop where you'll learn how to become a better version of...</p>
+						<h3 class="details">event details</h3>
+					</div>
+                </div>
+                
 			</div>
 		</div>
 		<div class="">

@@ -38,8 +38,8 @@ span.lol1{
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-    font-size: xx-large;
-    color: #FFDC00;
+    font-size: x-large;
+    color: #ffffff;
 }
 
 span.lol2{
@@ -48,7 +48,7 @@ span.lol2{
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-    font-size: xx-large;
+    font-size: x-large;
     margin-left: 10px;
     color: #0077ff;
 }
@@ -80,10 +80,11 @@ span.lol2{
 
 div .card{
     position: relative;
-    width: 350px;
-    height: 500px;
+    width: 400px;
+    height: 600px;
     border-radius: 3px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, .3);
+    margin: 13px;
+    /*box-shadow: 0 1px 4px rgba(0, 0, 0, .3);*/
     overflow: hidden;
 }
 
@@ -96,4 +97,9 @@ div .card{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+
+
+div#cards-oficial.container-fluid.row{
+    padding-left: 26px;
 }
