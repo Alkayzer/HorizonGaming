@@ -64,8 +64,9 @@ article.card .thumb {
     background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/new-york-city.png") no-repeat center;
     background-size: cover;
     border-radius: 3px;
-    background: black;
+    background: white;
 }
+
 article.card .infos {
     width: auto;
     height: 100px;
