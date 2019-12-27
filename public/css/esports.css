@@ -80,16 +80,19 @@ span.lol2{
 
 div .card{
     position: relative;
-    width: 400px;
-    height: 600px;
+    max-width: 370px;
+    height: 570px;
+    width: auto; 
     border-radius: 3px;
     margin: 13px;
     /*box-shadow: 0 1px 4px rgba(0, 0, 0, .3);*/
     overflow: hidden;
 }
 
-#cards-oficial{
+#cards-roster-oficial{
     text-align: center;
+    display: flex;
+    justify-content: space-between 1 space-around;
 }
 
 .card{
