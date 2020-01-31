@@ -81,7 +81,7 @@ span.lol2{
 div .card{
     position: relative;
     height: 570px;
-    max-width: 320px;
+    max-width: 250px;
     min-width: 230px !important;
     max-height: 400px !important;
     width: auto; 
