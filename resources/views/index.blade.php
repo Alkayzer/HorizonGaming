@@ -24,7 +24,7 @@
     <title>Horizon Gaming</title>
 
 	<!-- Favicon  -->
-    <link rel="icon" href="images/logo.png">
+	<link rel="icon" href="{{ URL::asset('/img/oso.jpg') }}" type="image/x-icon"/>
     
     <!-- Styles -->
 	<link href="{{ asset('css/app.css') }}" rel="stylesheet">

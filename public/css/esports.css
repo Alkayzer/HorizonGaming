@@ -80,8 +80,9 @@ span.lol2{
 
 div .card{
     position: relative;
-    max-width: 370px;
     height: 570px;
+    min-width: 230px !important;
+    max-height: 400px !important;
     width: auto; 
     border-radius: 3px;
     margin: 13px;
@@ -92,7 +93,11 @@ div .card{
 #cards-roster-oficial{
     text-align: center;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between 1 space-around;
+    
 }
 
 .card{
