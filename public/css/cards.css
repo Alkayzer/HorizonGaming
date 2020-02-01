@@ -1,142 +1,158 @@
-@font-face {
-    font-family: "Grotesque";
-    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Regular.eot"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Regular.ttf"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Regular.woff");
-    font-weight: normal;
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+*{
+  box-sizing: border-box;
 }
-@font-face {
-    font-family: "Grotesque Black";
-    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Black.eot"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Black.ttf"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Black.woff");
-    font-weight: bold;
-}
-* {
-    box-sizing: border-box;
-}
-html, body {
-    font-size: 100%;
-}
-body {
-    padding: 0;
+
+body, html {
+   font-family: 'Roboto Slab', serif;
     margin: 0;
-    background: #152536;
-}
-a[href] {
-    position: relative;
+  width: 100%;
+height: 100%;
+    padding: 0;
 }
 
-a[href]::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    left: 0;
-    bottom: 0;
-    background: #fff;
-    width: 0;
-    height: 1px;
-    transition: 0.35s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+body {
+  background-color: #D2DBDD;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-a[href]:hover::after {
+
+.cards {
     width: 100%;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, .3);
-}
-.note {
-    margin-top: 30px;
-    color: #fff;
-    font-size: 1rem;
-    font-family: 'Merriweather', sans-serif;
-    line-height: 1.5;
-    text-align: center;
-}
-article.card {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    left: 50%;
-    width: 350px;
-    height: 500px;
-    transform: translate(-50%, -50%) translateZ(0);
-    border-radius: 3px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, .3);
-    overflow: hidden;
-}
-article.card .thumb {
-    width: auto;
-    height: 400px;
-    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/new-york-city.png") no-repeat center;
-    background-size: cover;
-    border-radius: 3px;
-    background: white;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    max-width: 820px;
 }
 
-article.card .infos {
-    width: auto;
-    height: 100px;
-    position: relative;
-    padding: 14px 24px;
-    background: #fff;
-    transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+.card--1 .card__img, .card--1 .card__img--hover {
+    background-image: url('https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
 }
-article.card .infos .title {
-    position: relative;
-    margin: 10px 0;
-    letter-spacing: 3px;
-    color: #152536;
-    font-family: 'Grotesque Black', sans-serif;
-    font-size: 1rem;
-    text-transform: uppercase;
-    text-shadow: 0 0 0px #32577f;
+
+.card--2 .card__img, .card--2 .card__img--hover {
+    background-image: url('https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
 }
-article.card .infos .flag {
+
+.card__like {
+    width: 18px;
+}
+
+.card__clock {
+    width: 15px;
+  vertical-align: middle;
+    fill: #AD7D52;
+}
+.card__time {
+    font-size: 12px;
+    color: #AD7D52;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.card__clock-info {
+    float: right;
+}
+
+.card__img {
+  visibility: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 235px;
+  border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+  
+}
+
+.card__info-hover {
     position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    width: 35px;
-    height: 35px;
-    background: url("https://vignette.wikia.nocookie.net/leagueoflegends/images/e/ef/Top_icon.png/revision/latest/window-crop/width/40/x-offset/0/y-offset/5/window-width/130/window-height/130?cb=20181117143602") no-repeat top right;
-    background-size: 100% auto;
-    display: inline-block;
+    padding: 16px;
+  width: 100%;
+  opacity: 0;
+  top: 0;
 }
-article.card .infos .date, article.card .infos .seats {
+
+.card__img--hover {
+  transition: 0.2s all ease-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+  position: absolute;
+    height: 235px;
+  border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+top: 0;
+  
+}
+.card {
+  margin-right: 25px;
+  transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: #fff;
+    width: 33.3%;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+}
+.card:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+    transform: scale(1.10, 1.10);
+}
+
+.card__info {
+z-index: 2;
+  background-color: #fff;
+  border-bottom-left-radius: 12px;
+border-bottom-right-radius: 12px;
+   padding: 16px 24px 24px 24px;
+}
+
+.card__category {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+  color: #868686;
+}
+
+.card__title {
+    margin-top: 5px;
     margin-bottom: 10px;
-    text-transform: uppercase;
-    font-size: 0.85rem;
-    color: rgba(21, 37, 54, .7);
-    font-family: 'Grotesque', sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
-article.card .infos .seats {
-    display: inline-block;
-    margin-bottom: 24px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid rgba(0, 0, 0, .2);
-    opacity: 0;
-    transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+
+.card__by {
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
 }
-article.card .infos .txt {
-    font-family: 'Merriweather', sans-serif;
-    line-height: 2;
-    font-size: 0.95rem;
-    color: rgba(21, 37, 54, .7);
-    opacity: 0;
-    transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+
+.card__author {
+    font-weight: 600;
+    text-decoration: none;
+    color: #AD7D52;
 }
-article.card .infos .details {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    margin: 10px 0;
-    padding: 20px 24px;
-    letter-spacing: 1px;
-    color: #4e958b;
-    font-family: 'Grotesque Black', sans-serif;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    cursor: pointer;
-    opacity: 0;
-    transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+
+.card:hover .card__img--hover {
+    height: 100%;
+    opacity: 0.3;
 }
-article.card:hover .infos {
-    transform: translateY(-400px);
+
+.card:hover .card__info {
+    background-color: transparent;
+    position: relative;
 }
-article.card:hover .infos .seats, article.card:hover .infos .txt, article.card:hover .infos .details {
+
+.card:hover .card__info-hover {
     opacity: 1;
 }
